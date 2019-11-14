@@ -114,7 +114,7 @@ int main()
 		for(int j=0;j<works_m;j++)
 		{
 			//cout<<"works_m: "<<j<<endl;
-			print_nodes();
+			//print_nodes();
 			cin>>select_work;
 			if(select_work=='!')
 			{
