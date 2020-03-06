@@ -27,16 +27,6 @@ int dfs()
 
 	get_current_val=input_list[point_y][point_x];
 
-
-	if(t==36)
-	{
-		cout<<"get_current_val: "<<get_current_val<<endl;
-		cout<<"point_y ,x,present_dir :"<<point_y<<" "<<point_x<<" "<<present_dir<<endl;
-		cout<<"visited_list_dir[point_y][point_x][present_dir] : "<<visited_list_dir[point_y][point_x][present_dir]<<endl;
-
-		//cout<<"memory_int : "<<memory_int<<endl;
-	}
-
 	if((visited_list[point_y][point_x][memory_int]==1)&&(visited_list_dir[point_y][point_x][present_dir]==1))
 	{
 		return 0;
@@ -195,6 +185,7 @@ int main()
 		point_y=0;
 		memory_int=0;
 		veri=0;
+
 		for(int r=0;r<R;r++)
 		{
 			for(int c=0;c<C;c++)
@@ -207,7 +198,7 @@ int main()
 				}
 				for(int j=0;j<4;j++)
 				{
-					visited_list_dir[point_y][point_x][j]=0;
+					visited_list_dir[r][c][j]=0;
 				}
 			}
 		}
@@ -224,13 +215,6 @@ int main()
 
 			}
 		}
-		if(t==36)
-		{
-			cout<<input_list[0]<<endl;
-			cout<<input_list[1]<<endl;
-		}
-
-
 		present_dir=2;
 		dfs();
 		if(veri==1)
