@@ -17,8 +17,6 @@ def dfs(D_val,b_val,r_val,cnt,current_dir):
 		return 0
 
 
-	
-
 	cnt = cnt + 1
 
 
@@ -33,9 +31,6 @@ def dfs(D_val,b_val,r_val,cnt,current_dir):
 			dxy.remove((-1,0))
 		elif current_dir == (-1,0):
 			dxy.remove((1,0))
-
-
-	#print(cnt, r_val, b_val, "dxy",dxy)
 
 
 	#print("dxy",dxy)
