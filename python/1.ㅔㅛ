@@ -1,0 +1,5 @@
+def solution(n, delivery):
+    answer = ''
+    return answer
+
+solution(n, delivery)
